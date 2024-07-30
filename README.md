@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# System Design Overview
+## Introduction
+This is a simple yet feature-rich Todo List application built using React. It allows users to manage their tasks efficiently with functionalities to create, update, mark as done, search, and view tasks in an expandable format. The application also demonstrates responsive design principles for an enhanced user experience across devices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Core Features
+### Create Task: Users can add new tasks with a title and description.
+### Update Task: Users can edit the title and description of existing tasks.
+### Mark as Done: Users can mark tasks as completed, and toggle this status.
+### Search Tasks: Users can filter tasks based on a search term.
+### Expandable List: Each task can be expanded to show its description and the last updated timestamp.
 
-## Available Scripts
+## Data Storage
+The application uses a dummy JSON file (tasks.json) as a data repository. This simulates a backend data source for the tasks.
+Framework
 
-In the project directory, you can run:
+### React: The application is built using React, a popular JavaScript library for building user interfaces.
 
-### `npm start`
+## Components Overview
+### App.js: The main component that manages the state and integrates all other components.
+### SearchBar.js: A component for the search input to filter tasks.
+### Task.js: A component that represents an individual task, including its title, description, and controls for editing and marking as done.
+### TaskForm.js: A form component for adding new tasks.
+### TaskList.js: A component that renders the list of tasks, filtered by the search term.
+### tasks.json: A dummy data file containing initial tasks.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Styling
+The application uses CSS for styling, defined in index.css and App.css, to provide a modern and clean user interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# How to run the application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Install Node JS
+Refer to https://nodejs.org/en/ to install nodejs
 
-### `npm run build`
+### Install create-react-app
+Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install -g create-react-app
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Cloning and Running the Application in local
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the project into local
 
-### `npm run eject`
+Install all the npm packages. Go into the project folder and type the following command to install all npm packages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In order to run the application Type the following command
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The Application Runs on **localhost:3000**
